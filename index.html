@@ -1,93 +1,35 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thông tin cá nhân</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f0f2f5;
-      margin: 0;
-      color: #333;
-    }
+    body {font-family: Arial, sans-serif;background: #f0f2f5;margin: 0;color: #333;}
+    
+    .wrapper {max-width: 1000px;margin: 40px auto;display: flex;gap: 20px;align-items: flex-start;}
 
-    .wrapper {
-      max-width: 1000px;
-      margin: 40px auto;
-      display: flex;
-      gap: 20px;
-      align-items: flex-start;
-    }
+    .container, .profile, .music-box {background: white;border-radius: 12px;box-shadow: 0 4px 10px rgba(0,0,0,0.1);}
 
-    .container, .profile, .music-box {
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    }
+    .container {flex: 2;padding: 25px;}
+    
+    .profile {flex: 1;padding: 20px;text-align: center;display: flex;flex-direction: column;justify-content: flex-start;}
 
-    .container {
-      flex: 2;
-      padding: 25px;
-    }
+    .profile img {width: 120px;height: 120px;object-fit: cover;border-radius: 50%;border: 3px solid #4a90e2;margin: 10px auto;}
 
-    .profile {
-      flex: 1;
-      padding: 20px;
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-start;
-    }
+    h1, h2, h3 {text-align: center;color: #2c3e50;}
 
-    .profile img {
-      width: 120px;
-      height: 120px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 3px solid #4a90e2;
-      margin: 10px auto;
-    }
+    .info {margin: 15px 0;font-size: 16px;}
 
-    h1, h2, h3 {
-      text-align: center;
-      color: #2c3e50;
-    }
+    .label {font-weight: bold;color: #2c3e50;}
+    a {color: #3498db;text-decoration: none;}
+    a:hover {text-decoration: underline;}
 
-    .info {
-      margin: 15px 0;
-      font-size: 16px;
-    }
+    .music-wrapper {max-width: 1000px;margin: 20px auto;display: flex;flex-direction: column;gap: 20px;}
 
-    .label {
-      font-weight: bold;
-      color: #2c3e50;
-    }
+    .music-box {padding: 15px;}
 
-    a {
-      color: #3498db;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    .music-wrapper {
-      max-width: 1000px;
-      margin: 20px auto;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-
-    .music-box {
-      padding: 15px;
-    }
-
-    iframe {
-      border-radius: 10px;
-    }
+    iframe {border-radius: 10px;}
   </style>
 </head>
 <body>
@@ -118,7 +60,8 @@
     </div>
 
     <div class="info">
-      <span class="label">Email:</span> nguyenkhoiminh720@gmail.com
+      <span class="label">Email:</span>
+      nguyenkhoiminh720@gmail.com
     </div>
 
     <div class="info">
@@ -133,9 +76,9 @@
       <span class="label">Sở thích:</span>
       <ul>
         <li>Sưu tầm truyện</li>
-        <li>Đọc manga</li>
-        <li>Đọc light novel (LN)</li>
+        <li>đọc truyện</li>
         <li>Nghe nhạc</li>
+      	<li>gameeee</li>
       </ul>
     </div>
 
@@ -152,12 +95,12 @@
 
   <div class="music-box">
     <h3>Bài hát đang thích</h3>
-    <iframe width="100%" height="200" src="https://www.youtube.com/embed/gsGjcLVI6X4" frameborder="0" allowfullscreen></iframe>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/gsGjcLVI6X4" frameborder="0" allowfullscreen></iframe>
   </div>
 
   <div class="music-box">
     <h3>Bài hát thích nhất</h3>
-    <iframe width="100%" height="200" src="https://www.youtube.com/embed/ViKAZXQjJtI" frameborder="0" allowfullscreen></iframe>
+    <iframe width="100%" height="315" src="https://www.youtube.com/embed/ViKAZXQjJtI" frameborder="0" allowfullscreen></iframe>
   </div>
 
 </div>
@@ -168,3 +111,4 @@
 
 </body>
 </html>
+
