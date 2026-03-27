@@ -1,117 +1,89 @@
 <!DOCTYPE html>
-<html>
+<html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thông tin cá nhân</title>
-  <style>
-    body {font-family: Arial, sans-serif;background: #f0f2f5;margin: 0;color: #333;}
-    
-    .wrapper {max-width: 1000px;margin: 40px auto;display: flex;gap: 20px;align-items: flex-start;}
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thông tin cá nhân - Nguyễn Khôi Minh</title>
+<style>
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f0f2f5; margin: 0; color: #333; line-height: 1.6; }
 
-    .container, .profile, .music-box {background: white;border-radius: 12px;box-shadow: 0 4px 10px rgba(0,0,0,0.1);}
+.wrapper { max-width: 1000px; margin: 40px auto; display: flex; gap: 20px; padding: 0 20px; }
 
-    .container {flex: 2;padding: 25px;}
-    
-    .profile {flex: 1;padding: 20px;text-align: center;display: flex;flex-direction: column;justify-content: flex-start;}
+.container, .profile, .music-box { background: white; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: transform 0.3s ease; }
 
-    .profile img {width: 120px;height: 120px;object-fit: cover;border-radius: 50%;border: 3px solid #4a90e2;margin: 10px auto;}
+.container { flex: 2; padding: 25px; }
 
-    h1, h2, h3 {text-align: center;color: #2c3e50;}
+.profile { flex: 1; padding: 20px; text-align: center; position: sticky; top: 20px; }
 
-    .info {margin: 15px 0;font-size: 16px;}
+.profile img { width: 150px; height: 150px; object-fit: cover; border-radius: 50%; border: 4px solid #4a90e2; margin-bottom: 15px; box-shadow: 0 4px 10px rgba(74, 144, 226, 0.3); }
 
-    .label {font-weight: bold;color: #2c3e50;}
-    a {color: #3498db;text-decoration: none;}
-    a:hover {text-decoration: underline;}
+h1, h2, h3 { color: #2c3e50; margin-top: 0; }
 
-    .video-container {width: 100%; aspect-ratio: 16 / 9; overflow: hidden;border-radius: 8px;}
+h1 { border-bottom: 2px solid #4a90e2; padding-bottom: 10px; display: inline-block; }
 
-    .video-container iframe {width: 100%;height: 100%;border: none;}
-    
-    .music-wrapper {max-width: 1000px; margin: 0 auto 40px;padding: 0 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
+.info { margin: 15px 0; font-size: 16px; }
 
-    .music-box {padding: 20px;}
+.label { font-weight: bold; color: #4a90e2; min-width: 120px; display: inline-block; }
 
-    iframe {width: 100%; height: 250px; border-radius: 10px;}
-  </style>
+a { color: #3498db; text-decoration: none; word-break: break-all; }
+
+a:hover { text-decoration: underline; }
+
+.music-wrapper { max-width: 1000px; margin: 0 auto 40px; padding: 0 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+
+.music-box { padding: 20px; }
+
+.video-container { width: 100%; aspect-ratio: 16/9; overflow: hidden; border-radius: 8px; background: #000; }
+
+.video-container iframe { width: 100%; height: 100%; border: none; }
+
+@media (max-width: 768px) {
+    .wrapper, .music-wrapper { flex-direction: column; grid-template-columns: 1fr; }
+    .profile { position: static; }
+}
+</style>
 </head>
 <body>
-
 <div class="wrapper">
-
-  <div class="container">
-    <h1>Thông tin cá nhân</h1>
-
-    <div class="info">
-      <span class="label">Họ và tên:</span> Nguyễn Khôi Minh
+    <div class="container">
+        <h1>Thông tin cá nhân</h1>
+        <div class="info"><span class="label">Họ và tên:</span> Nguyễn Khôi Minh</div>
+        <div class="info"><span class="label">Ngày sinh:</span> 14/03/2008</div>
+        <div class="info"><span class="label">Học vấn:</span> Học sinh THPT</div>
+        <div class="info"><span class="label">Trường:</span> THPT Phạm Hồng Thái</div>
+        <div class="info"><span class="label">Chứng chỉ:</span> IELTS 6.5</div>
+        <div class="info"><span class="label">Email:</span> nguyenkhoiminh720@gmail.com</div>
+        <div class="info"><span class="label">Facebook:</span> <a href="https://web.facebook.com/profile.php?id=61584740104999" target="_blank">Link Facebook</a></div>
+        <div class="info"><span class="label">Sở thích:</span>
+            <ul style="margin-top: 5px;">
+                <li>Sưu tầm truyện & Đọc truyện</li>
+                <li>Nghe nhạc</li>
+                <li>Chơi game</li>
+            </ul>
+        </div>
     </div>
-
-    <div class="info">
-      <span class="label">Ngày sinh:</span> 14/03/2008
+    <div class="profile">
+        <h2>Avatar</h2>
+        <img src="https://scontent.fhan4-5.fna.fbcdn.net/v/t39.30808-6/656660066_122123852811158003_7270978062096479540_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeEebiFAJYPDG5ub63Gh_4Jjv0H1tsbmoha_QfW2xuaiFnRyXMneMKGoi12j5537RpLjbxjBFrDw-J7NCrt9YkVl&_nc_ohc=ixf_EuXrHokQ7kNvwEy6qS9&_nc_oc=Adq_SrEXWDwdVnsbrDaWVEtMTfDWvT9wXZKDxeUw4jlecZonZF0AP6Ucx74jqSVDaYw&_nc_zt=23&_nc_ht=scontent.fhan4-5.fna&_nc_gid=5WSqYVpHR9EtuDu182VS3Q&_nc_ss=7a32e&oh=00_AfwXWBPTkIMT2CWsGOyD-u19KfeTXxG6vc2hxqtaNVdUkA&oe=69CB44F8" alt="Avatar">
+        <p><strong>Khôi Minh</strong></p>
     </div>
-
-    <div class="info">
-      <span class="label">Trình độ học vấn:</span> Học sinh THPT
-    </div>
-
-    <div class="info">
-      <span class="label">Trường:</span> THPT Phạm Hồng Thái
-    </div>
-
-    <div class="info">
-      <span class="label">Bằng cấp / chứng chỉ:</span> IELTS 6.5
-    </div>
-
-    <div class="info">
-      <span class="label">Email:</span>
-      nguyenkhoiminh720@gmail.com
-    </div>
-
-    <div class="info">
-      <span class="label">Facebook:</span> <a href="https://web.facebook.com/profile.php?id=61584740104999">https://web.facebook.com/profile.php?id=61584740104999</a>
-    </div>
-
-    <div class="info">
-      <span class="label">Instagram:</span> <a href="https://www.instagram.com/khooiminhhh/">https://www.instagram.com/khooiminhhh/</a>
-    </div>
-
-    <div class="info">
-      <span class="label">Sở thích:</span>
-      <ul>
-        <li>Sưu tầm truyện</li>
-        <li>đọc truyện</li>
-        <li>Nghe nhạc</li>
-      	<li>gameeee</li>
-      </ul>
-    </div>
-
-  </div>
-
-  <div class="profile">
-    <h2>Avatar</h2>
-    <img src="https://scontent.fhan4-5.fna.fbcdn.net/v/t39.30808-6/656660066_122123852811158003_7270978062096479540_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeEebiFAJYPDG5ub63Gh_4Jjv0H1tsbmoha_QfW2xuaiFnRyXMneMKGoi12j5537RpLjbxjBFrDw-J7NCrt9YkVl&_nc_ohc=ixf_EuXrHokQ7kNvwEy6qS9&_nc_oc=Adq_SrEXWDwdVnsbrDaWVEtMTfDWvT9wXZKDxeUw4jlecZonZF0AP6Ucx74jqSVDaYw&_nc_zt=23&_nc_ht=scontent.fhan4-5.fna&_nc_gid=5WSqYVpHR9EtuDu182VS3Q&_nc_ss=7a32e&oh=00_AfwXWBPTkIMT2CWsGOyD-u19KfeTXxG6vc2hxqtaNVdUkA&oe=69CB44F8" alt="Avatar">
-  </div>
-
 </div>
-
 <div class="music-wrapper">
-
-  <div class="music-box">
-    <h3>Bài hát đang thích</h3
-    <div class="video-container">                        
-<iframe src="https://www.youtube.com/embed/gsGjcLVI6X4" width="100%" height="315" frameborder="0" allowfullscreen></iframe>
-  </div>
-
-  <div class="music-box">
-    <h3>Bài hát ưa thích</h3>
-    <div class="video-container">
-    <iframe width="100%" height="315" src="https://www.youtube.com/embed/ViKAZXQjJtI" frameborder="0" allowfullscreen></iframe>
-  </div>
-
+    <div class="music-box">
+        <h3>Bài hát đang thích</h3>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/gsGjcLVI6X4" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="music-box">
+        <h3>Bài hát ưa thích</h3>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/ViKAZXQjJtI" allowfullscreen></iframe>
+        </div>
+    </div>
 </div>
+<div style="text-align:center; font-size:13px; color:#888; margin-bottom: 40px;">
 
-  <div style="text-align:center; font-size:13px; color:#888; margin:20px 0;">
     có sử dụng AI để TÌM/SỬA LỖI nhé cô 😊!!!
   </div>
 
